@@ -6,7 +6,7 @@ A tutorial on how to create a to-do app with Angular.js and Stamplay
 
 
 ##Overview
-This application can sign up users, as well as create, complete, and delete tasks from a list. Angular combined the Stamplay Javascript SDK will be used
+This application can sign up users, as well as create, complete, and delete tasks from a list. Angular combined with the Stamplay Javascript SDK will be used
 to write the front-end code, while Stamplay's platform will handle all of our server side logic. This means that we will not write any back-end code, instead
 we will use the GUI provided by Stamplay to configure our back-end in just minutes. That's right, a full stack app with no back-end code!
 
