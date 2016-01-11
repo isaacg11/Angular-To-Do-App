@@ -26,7 +26,48 @@ process. Under the *Operation* dropdown select *Create Object*
 ![GitHub Logo](public/images/dataSection.png)
 
 ##Bringing in the front-end code and using the SDK
-1. Clone this repo
+
+###Initialize App
+1. Clone this repo by running the below command in your command line
 ```
-git clone
+git clone https://github.com/isaacg11/Angular-To-Do-App.git
 ```
+2. Install all dependencies via bower
+```
+bower install jquery
+bower install angular
+bower install angular-ui-router
+bower install angular-stamplay
+```
+3. install command line tool for Stamplay
+```
+ npm install -g stamplay-cli
+```
+4. Initialize front-end of app with Stamplay by running the below command in your command line
+```
+stamplay init
+```
+Then you will be prompted to enter your AppId and your API Key. These can be located on the first view of your app in the Stamplay editor. Enter AppId and API Key in command line.
+
+![GitHub Logo](public/images/stamplayInit.png)
+
+###The Javascript SDK
+1. Next, we need to bring in the Stamplay SDK library by copying the CDN provided below and pasting in into the **index.html** file. Alternatively, you may install it with bower if you prefer.
+```
+<script src="//drrjhlchpvi7e.cloudfront.net/libs/stamplay-js-sdk/1.3.2/stamplay.min.js"></script>
+```
+2. Now we need to initialize the SDK library with our specific app. To do this, enter *Stamplay.init('yourAppId')* on the top of your **Javascript files**. (both controllers & services will need this)
+```
+Stamplay.init('yourAppId')
+```
+###Local Development & Hosting
+1. Now that we have everything set up, we can now run our app on the local server by running the below command:
+```
+stamplay start
+```
+2. Next, we can deploy this app live by entering the below command:
+```
+stamplay deploy
+```
+
+##Signup New Users
