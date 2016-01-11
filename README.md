@@ -1,5 +1,9 @@
+
 # Angular-To-Do-App
 A tutorial on how to create a to-do app with Angular.js and Stamplay
+
+![GitHub Logo](public/images/logo_head_transparent_bg.png)
+
 
 ##Overview
 This application can sign up users, as well as create, complete, and delete tasks from a list. Angular combined the Stamplay Javascript SDK will be used
